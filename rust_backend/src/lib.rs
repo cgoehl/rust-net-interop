@@ -11,5 +11,5 @@ pub extern "C" fn hello_rust() {
 
 #[no_mangle]
 pub extern "C" fn into_callback(value: usize, callback: extern fn(usize)) {
-  callback(value);
+  callback(value + 1);
 }
