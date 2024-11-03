@@ -2,7 +2,7 @@
 open System
 
 [<Literal>]
-let libPath = @"/home/paz/_p/fsharp_interop/rust_backend/target/debug/librust_backend.so"
+let libPath = @"librust_backend"
 
 type NativeCallback = delegate of unativeint -> unit
 

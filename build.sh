@@ -4,5 +4,5 @@ set -eu
 set -o pipefail
 
 dotnet tool restore
-dotnet paket restore
-dotnet run -v:m --project ./build/build.fsproj -- -t "$@"
+#dotnet paket restore
+dotnet fake build
